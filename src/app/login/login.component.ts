@@ -13,13 +13,14 @@ export class LoginComponent implements OnInit {
   errorMessage = 'invalid';
   invalidLogin = false;
 
-  constructor(router: Router) { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
   handleLogin() {
     if (this.username === 'olcay' && this.password === 'dummy') {
+      this.router.navigate(['welcome']);
       this.invalidLogin = false;
     } else {
       this.invalidLogin = true;

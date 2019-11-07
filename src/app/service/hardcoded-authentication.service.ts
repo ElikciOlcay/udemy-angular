@@ -17,6 +17,10 @@ export class HardcodedAuthenticationService {
     return false;
   }
 
+  logout() {
+    sessionStorage.removeItem('authUser');
+  }
+
   isUserLoggedIn() {
     // tslint:disable-next-line:prefer-const
     let user = sessionStorage.getItem('authUser');

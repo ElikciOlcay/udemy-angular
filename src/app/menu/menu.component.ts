@@ -15,6 +15,10 @@ export class MenuComponent implements OnInit {
     private hardcodedauthservice: HardcodedAuthenticationService
   ) { }
 
+  handleLogout() {
+    this.hardcodedauthservice.logout();
+  }
+
   ngOnInit() {
     // this.isUserLoggedIn = this.hardcodedauthservice.isUserLoggedIn();
   }

@@ -1,0 +1,18 @@
+body {
+  background-image: url('../../assets/bg.jpg');
+  object-fit: cover;
+}
+
+.card-login {
+  border: none;
+  margin-top: 80px;
+}
+
+.btn {
+  width: 100%;
+}
+
+.row.inner {
+  display: flex;
+  justify-content: center;
+}
